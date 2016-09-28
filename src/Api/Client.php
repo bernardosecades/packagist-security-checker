@@ -111,7 +111,7 @@ class Client
         $result = [];
         foreach ($packages as $package) {
             $result[] =  $this->httpClient->requestAsync('GET', $this->packagistUrl.'/p/'.$package->getName().'.json')
-                ->then(function (ResponseInterface $response) use ($package) {
+                ->then(function (ResponseInterface $response) {
                     return json_decode($response->getBody(), true);
                 });
         }

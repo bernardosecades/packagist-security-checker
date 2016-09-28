@@ -1,5 +1,10 @@
 # Packagist Security Checker
 
+[![Build Status](https://travis-ci.org/bernardosecades/packagist-security-checker.svg?branch=master)](https://travis-ci.org/bernardosecades/packagist-security-checker)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bernardosecades/packagist-security-checker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bernardosecades/packagist-security-checker/?branch=master)
+[![License](https://poser.pugx.org/bernardosecades/packagist-security-checker/license)](https://packagist.org/packages/bernardosecades/packagist-security-checker)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/66cc45b9-5403-4cfd-923a-486df490a4a7/mini.png)](https://insight.sensiolabs.com/projects/66cc45b9-5403-4cfd-923a-486df490a4a7)
+
 ## About
 
 Tool to check possible bugs in your dependencies (public and private dependencies). It is based on [semver](http://semver.org) to detect bugs
@@ -85,7 +90,8 @@ You can easily integrate the checker into your project:
 
 ### Add command in your Symfony Console Application
 
-- Using the `PackagistSecurityCheckerCommand` class into your Symfony Console application
+Using the `PackagistSecurityCheckerCommand` class into your Symfony Console application
+
 ```php
 use BernardoSecades\Packagist\SecurityChecker\PackagistSecurityChecker;
 use BernardoSecades\Packagist\SecurityChecker\Command\PackagistSecurityCheckerCommand;
@@ -96,7 +102,7 @@ $app->add(new PackagistSecurityCheckerCommand(new PackagistSecurityChecker()));
 
 ### Use class directly in your own code
 
-- Or using the `PackagistSecurityChecker` class directly in your own code
+Or using the `PackagistSecurityChecker` class directly in your own code
 
 ```php
 use BernardoSecades\Packagist\SecurityChecker\PackagistSecurityChecker;

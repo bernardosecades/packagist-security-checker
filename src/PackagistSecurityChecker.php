@@ -42,15 +42,6 @@ class PackagistSecurityChecker
     /** @var bool */
     protected $bugs = false;
 
-    /** @var Package[] */
-    protected $packagesWithBugs = [];
-
-    /** @var Package[] */
-    protected $packagesNoPackagist = [];
-
-    /** @var Package[] */
-    protected $packagesNoSemanticVersioning = [];
-
     /**
      * @param Client|null $client
      */
@@ -121,11 +112,6 @@ class PackagistSecurityChecker
 
         foreach ($infoPackages as $infoPackage) {
             $package = $this->searchPackage($infoPackage, $packages);
-            /*
-            if (null === $package) {
-                continue;
-            }
-            */
             $package->setPackagist(true);
             // Overwrite data from packagist API
             $package->fromArray($infoPackage['packages'][$package->getName()][$package->getVersion()]);
