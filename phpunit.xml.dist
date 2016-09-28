@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/5.5/phpunit.xsd"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false">
+    <php>
+        <ini name="error_reporting" value="-1" />
+    </php>
+
+    <testsuites>
+        <testsuite name="packagist-security-unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="packagist-security-integration">
+            <directory>tests/Integration</directory>
+        </testsuite>
+        <testsuite name="packagist-security-functional">
+            <directory>tests/Functional</directory>
+        </testsuite>
+        <testsuite name="packagist-security-unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>./</directory>
+            <exclude>
+                <directory>./tests</directory>
+                <directory>./vendor</directory>
+                <directory>./src/bootstrap.php</directory>
+                <directory>./src/Compiler/Compiler.php</directory>
+                <directory>./src/Formatter</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

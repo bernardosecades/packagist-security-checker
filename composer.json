@@ -1,0 +1,42 @@
+{
+  "name": "bernardosecades/packagist-security-checker",
+  "description": "Check possible bugs in your dependencies",
+  "type": "library",
+  "keywords": ["dependencies", "packagist", "checker", "security"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bernardo Secades",
+      "email": "bernardosecades@gmail.com",
+      "homepage": "https://github.com/bernardosecades",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "bernardosecades@gmail.com",
+    "issues": "https://github.com/bernardosecades/packagist-security-checker/issues",
+    "source": "https://github.com/bernardosecades/packagist-security-checker"
+  },
+  "require": {
+    "php": "^5.4|^7.0",
+    "symfony/console": "^2.2|^3.0",
+    "symfony/process": "^2.2|^3.0",
+    "symfony/finder": "^2.2|^3.0",
+    "doctrine/inflector": "^1.1",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.5",
+    "bernardosecades/php-quality-tools": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "BernardoSecades\\Packagist\\SecurityChecker\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BernardoSecades\\Packagist\\SecurityChecker\\Tests\\": "tests/"
+    }
+  }
+}
