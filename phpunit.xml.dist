@@ -26,9 +26,6 @@
         <testsuite name="packagist-security-functional">
             <directory>tests/Functional</directory>
         </testsuite>
-        <testsuite name="packagist-security-unit">
-            <directory>tests/Unit</directory>
-        </testsuite>
     </testsuites>
 
     <filter>

@@ -29,6 +29,12 @@
     "phpunit/phpunit": "^5.5",
     "bernardosecades/php-quality-tools": "^1.0"
   },
+  "bin": [
+    "bin/packagist-security-checker"
+  ],
+  "config": {
+    "bin-dir": "bin"
+  },
   "autoload": {
     "psr-4": {
       "BernardoSecades\\Packagist\\SecurityChecker\\": "src/"

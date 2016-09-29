@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/bernardosecades/packagist-security-checker.svg?branch=master)](https://travis-ci.org/bernardosecades/packagist-security-checker)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bernardosecades/packagist-security-checker/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bernardosecades/packagist-security-checker/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/bernardosecades/packagist-security-checker/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bernardosecades/packagist-security-checker/?branch=master)
 [![License](https://poser.pugx.org/bernardosecades/packagist-security-checker/license)](https://packagist.org/packages/bernardosecades/packagist-security-checker)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/66cc45b9-5403-4cfd-923a-486df490a4a7/mini.png)](https://insight.sensiolabs.com/projects/66cc45b9-5403-4cfd-923a-486df490a4a7)
 

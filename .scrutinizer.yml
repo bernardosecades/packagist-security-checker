@@ -1,0 +1,13 @@
+build:
+    environment:
+        php: '5.6.9'
+    tests:
+        override:
+            -
+                command: 'phpunit --coverage-clover=coverage-file'
+                coverage:
+                    file: 'coverage-file'
+                    format: 'clover'
+filter:
+    excluded_paths:
+        - src/bootstrap.php
